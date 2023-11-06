@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #ffffffd4;
+  background-color: rgba(0, 0, 0, 0.915);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.header-bg {
+  width: 100vw;
+}
+
+.main-header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background: black;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.nav-container {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-container li {
+  list-style: none;
+}
+
+.nav-container li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-container li a:hover {
+  color: aqua;
+}
+
+main {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  justify-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  grid-column: span 6;
+  margin: 60px 0 10px 0;
+  text-align: center;
+}
+
+.info-text {
+  grid-column: span 3;
+  align-self: center;
+}
+
+.info-heading {
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+  color: aqua;
+  font-style: italic;
+}
+.dive-img {
+  grid-column: span 3;
+}
+
+.objective-img {
+  grid-column: 4/7;
+}
+
+.info--2 {
+  grid-column: 1/4;
+  grid-row: 3;
+}
+
+h2 {
+  grid-column: span 6;
+  margin: 75px 0 10px 0;
+}
+
+.game-menu-image {
+  grid-column: span 3;
+}
+
+.download-info {
+  grid-column: span 3;
+  align-self: center;
+
+  justify-self: center;
+}
+
+.downloads {
+  grid-column: span 6;
+  margin-bottom: 70px;
+}
+
+.btn {
+  background: teal;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  filter: brightness(1.5);
+}
+
+.members img {
+  width: 250px;
+  max-height: 250px;
+  margin-bottom: 0.5rem;
+}
+
+.members {
+  grid-column: span 6;
+  display: flex;
+  gap: 50px;
+}
+
+.members p {
+  text-align: center;
+}
+
+.name {
+  color: white;
+}
+
+.role {
+  font-size: 0.8rem;
+  color: teal;
+}
+
+footer {
+  margin-top: 250px;
+  background: black;
+  padding: 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* responsive */
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  p,
+  h2 {
+    text-align: center;
+  }
+  .downloads {
+    margin: 0 auto;
+  }
+  .members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .members img {
+  }
+}
