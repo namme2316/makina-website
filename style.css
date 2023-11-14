@@ -106,7 +106,25 @@ h2 {
 
 .downloads {
   grid-column: span 6;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.survey {
+  grid-column: span 6;
+  max-width: 400px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+
+.survey-header {
+  margin-bottom: 2rem;
+}
+
+.survey-text {
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -179,8 +197,5 @@ footer p {
   .members {
     flex-direction: column;
     align-items: center;
-  }
-
-  .members img {
   }
 }
