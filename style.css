@@ -149,11 +149,19 @@ h2 {
   grid-column: span 6;
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .members p {
   text-align: center;
 }
+
+/* .member--5 {
+  justify-self: center;
+  align-self: center;
+} */
 
 .name {
   color: white;
